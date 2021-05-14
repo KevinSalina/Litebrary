@@ -1,0 +1,369 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: 'DM Sans', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-content {
+  background: #2B4162;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+  margin: 0 auto;
+}
+
+.main-content .library-title {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #F5F0F6;
+}
+
+.main-content .book-grid {
+  display: -ms-grid;
+  display: grid;
+  gap: 2rem;
+  -ms-grid-columns: (minmax(125px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(125px, 1fr));
+  justify-items: center;
+  margin: 0 2rem;
+}
+
+.main-content .book-grid .book-card {
+  width: 150px;
+  height: 225px;
+  background: #FFF5FF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 0px 0px 3px 3px;
+}
+
+.main-content .book-grid .book-card .book-card-top {
+  height: 70%;
+  position: relative;
+  overflow: hidden;
+}
+
+.main-content .book-grid .book-card .book-card-top img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+}
+
+.main-content .book-grid .book-card .book-card-top i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 3rem;
+  color: #2B4162;
+}
+
+.main-content .book-grid .book-card .book-card-top .book-info-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.main-content .book-grid .book-card .book-card-top:hover .book-info-title {
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.main-content .book-grid .book-card .book-card-bottom {
+  height: 30%;
+  padding: .25rem;
+  background: #F5F0F6;
+}
+
+.main-content .book-grid .book-card .book-card-bottom .book-info-top {
+  margin-bottom: .3rem;
+}
+
+.main-content .book-grid .book-card .book-card-bottom .book-info-top .book-info-author {
+  font-size: .875rem;
+}
+
+.main-content .book-grid .book-card .book-card-bottom .book-info-top .book-info-pages {
+  font-size: .75rem;
+}
+
+.main-content .book-grid .book-card .book-card-bottom .book-info-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: .75rem;
+  gap: .75rem;
+}
+
+.main-content .book-grid .book-card .book-card-bottom .book-info-bottom i {
+  cursor: pointer;
+}
+
+.main-content .book-grid .book-card .book-card-bottom .book-info-bottom .hasReadDisplay i {
+  color: #97A8B4;
+}
+
+.main-content .book-grid .book-card .book-card-bottom .book-info-bottom .hasReadDisplay i.active {
+  color: #00AE95;
+}
+
+.main-content .book-grid .book-card .book-card-bottom .book-info-bottom i.fa-trash {
+  color: #F05F75;
+}
+
+.side-form {
+  background: #F5F0F6;
+  color: #2B4162;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  max-width: 375px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
+  gap: 1rem 0;
+}
+
+.side-form header {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.side-form header h1 {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.side-form header p {
+  font-weight: 500;
+  font-size: 1.125rem;
+}
+
+.side-form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+
+.side-form form .input-block {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: .5rem;
+}
+
+.side-form form .input-block.checkbox {
+  /* The switch - the box around the slider */
+  /* Hide default HTML checkbox */
+  /* The slider */
+  /* Rounded sliders */
+}
+
+.side-form form .input-block.checkbox .switch {
+  position: relative;
+  display: inline-block;
+  width: 35px;
+  height: 20px;
+}
+
+.side-form form .input-block.checkbox .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.side-form form .input-block.checkbox .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.side-form form .input-block.checkbox .slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.side-form form .input-block.checkbox input:checked + .slider {
+  background-color: #00AE95;
+}
+
+.side-form form .input-block.checkbox input:focus + .slider {
+  -webkit-box-shadow: 0 0 1px #00AE95;
+          box-shadow: 0 0 1px #00AE95;
+}
+
+.side-form form .input-block.checkbox input:checked + .slider:before {
+  -webkit-transform: translateX(15px);
+  transform: translateX(15px);
+}
+
+.side-form form .input-block.checkbox .slider.round {
+  border-radius: 34px;
+}
+
+.side-form form .input-block.checkbox .slider.round:before {
+  border-radius: 50%;
+}
+
+.side-form form .input-block input {
+  background: none;
+  border: none;
+  border-bottom: 1px solid #2B4162;
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 1.25rem;
+  padding-bottom: .25rem;
+  /* Chrome, Safari, Edge, Opera */
+  /* Firefox */
+}
+
+.side-form form .input-block input::-webkit-outer-spin-button, .side-form form .input-block input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.side-form form .input-block input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.side-form form .input-block input:focus {
+  outline: none;
+}
+
+.side-form form .input-block span.label {
+  position: absolute;
+  left: 0;
+  top: -5px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  pointer-events: none;
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+}
+
+.side-form form .input-block input:valid + span.label, .side-form form .input-block input:focus + span.label {
+  -webkit-transform: scale(0.8) translateY(-20px);
+          transform: scale(0.8) translateY(-20px);
+}
+
+.side-form form .input-block input#cover + span.label {
+  -webkit-transform: scale(1) translateY(0px);
+          transform: scale(1) translateY(0px);
+}
+
+.side-form form .input-block input#cover + span.label.active {
+  -webkit-transform: scale(0.8) translateY(-20px);
+          transform: scale(0.8) translateY(-20px);
+}
+
+.side-form form .input-block input#cover:focus + span.label {
+  -webkit-transform: scale(0.8) translateY(-25px);
+          transform: scale(0.8) translateY(-25px);
+}
+
+.side-form form .input-block span.err-msg {
+  position: absolute;
+  top: 50%;
+  font-size: .75rem;
+  color: #F05F75;
+  display: none;
+}
+
+.side-form form button {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-top: 1rem;
+  background: #2B4162;
+  color: #F5F0F6;
+  padding: .5rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+  cursor: pointer;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.side-form form button:hover {
+  background: #052341;
+}
+/*# sourceMappingURL=styles.css.map */

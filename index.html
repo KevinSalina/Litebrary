@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/css/styles.css">
+    <link rel="icon" href="./assets/book.png">
+    <script src="https://kit.fontawesome.com/421a2e0bfb.js" crossorigin="anonymous"></script>
+    <title>Library Project</title>
+</head>
+
+<body>
+    <section class="side-form">
+        <header>
+            <h1>Litebrary</h1>
+            <p>A Simple Web Library</p>
+        </header>
+        <form autocomplete="off">
+            <div class="input-block">
+                <!-- <label for="title">Title</label> -->
+                <input type="text" id="title" name="title" required>
+                <span class="label">Title</span>
+                <span class="err-msg" id="title-err">Please fill out this field</span>
+            </div>
+            <div class="input-block">
+                <!-- <label for="author">Author</label> -->
+                <input type="text" id="author" name="author" required>
+                <span class="label">Author</span>
+                <span class="err-msg" id="author-err">Please fill out this field</span>
+            </div>
+            <div class="input-block">
+                <!-- <label for="pages">Pages</label> -->
+                <input type="number" id="pages" name="pages" min="1" required>
+                <span class="label">Pages</span>
+                <span class="err-msg" id="pages-err">Pages must be number greater than 0</span>
+            </div>
+            <div class="input-block">
+                <!-- <label for="cover">Cover Image (url)</label> -->
+                <input type="url" id="cover" name="cover">
+                <span class="label">Cover Image (url)</span>
+                <span class="err-msg" id="cover-err">Must be valid URL </span>
+            </div>
+            <div class="input-block checkbox">
+                <span>Read</span>
+                <label class="switch">
+                    <input type="checkbox" id="hasRead" name="hasRead">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <button id="submitBook">Submit</button>
+        </form>
+        <div class=""></div>
+    </section>
+
+    <section class="main-content">
+        <div class="library-title">
+            <h2>My Books</h2>
+        </div>
+        <div class="book-grid">
+        </div>
+    </section>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
