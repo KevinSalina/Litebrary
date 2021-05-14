@@ -36,7 +36,7 @@ From The Odin Project's [curriculum](addlink).
 
 ### What I learned
 
-* How to better utilized javacipt object constructors.
+* How to better utilize javacipt object constructors.
 * Storing user data in localStroage.
 * Custom HTML form validation.
 * Better understanding of SASS
@@ -45,7 +45,7 @@ From The Odin Project's [curriculum](addlink).
 
 * Cleaner book card layout.
 * More options for user to search or sort books.
-* Use Firebase to store book data instead of localStorage
+* Use Firebase to store book data instead of localStorage.
 
 ## Author
 
