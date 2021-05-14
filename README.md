@@ -27,7 +27,7 @@ From The Odin Project's [curriculum](addlink).
 
 ## Outcome
 
-* Used CSS3 **flexbox** to create basic layout and responsivness.
+* Used CSS3 **flexbox** & **grid** to create basic layout and responsivness.
 * Used **localStroage** to store user's books.
 * Used **object constructor** for basic book object.
 * Custom form validation.
