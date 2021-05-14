@@ -366,4 +366,8 @@ body {
 .side-form form button:hover {
   background: #052341;
 }
+
+.side-form .footer {
+  margin-top: auto;
+}
 /*# sourceMappingURL=styles.css.map */
