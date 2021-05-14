@@ -28,8 +28,9 @@ From The Odin Project's [curriculum](addlink).
 ## Outcome
 
 * Used CSS3 **flexbox** to create basic layout and responsivness.
-* Used **localStroage* to store user's books.
-* Used object constructor for basic book object.
+* Used **localStroage** to store user's books.
+* Used **object constructor** for basic book object.
+* Custom form validation.
 
 ## Summary
 
@@ -38,6 +39,7 @@ From The Odin Project's [curriculum](addlink).
 * How to better utilized javacipt object constructors.
 * Storing user data in localStroage.
 * Custom HTML form validation.
+* Better understanding of SASS
 
 ### What could be improved
 
