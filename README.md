@@ -1,6 +1,6 @@
 # Project Title
 
-Project to create **Library App** using only HTML, CSS and JS.
+Project to create a local storage **Library App** using only HTML, CSS and JS.
 Project will follow basic Git workflow
 
 🔗 **Live preview:** [here](https://kevinsalina.github.io/simple-library-app/)
@@ -15,6 +15,8 @@ From The Odin Project's [curriculum](addlink).
 * CSS
 * SASS
 * JS
+* Local Storage
+* Javascript Object Constructers
 
 ### Tools
 
